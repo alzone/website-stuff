@@ -1,0 +1,21 @@
+<html ng-app="menuapp">
+	<head>
+		<title>
+			"Welcome to my site menu"
+		</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+		<script type="text/javascript" src="javascript/main.js"></script>
+	</head>
+	<body>
+		<div ng-controller="DobController">
+		<label><h1>"Enter your Dob"</label></h1>
+		<label>Month</label>
+		<input type="text" ng-model="dobMonth" placeholder="MM" >
+		<label>Day</label>
+		<input type="text" ng-model="dobDay" placeholder="DD">
+		<label>Year</label>
+		<input type="text" ng-model="dobYear" placeholder="YYYY">
+		<span ng-if="dobMonth && dobDay && dobYear">{{dobMonth}}/{{dobDay}}/{{dobYear}}</span>
+		<alert"hello"></alert>
+	</body>
+</html>
